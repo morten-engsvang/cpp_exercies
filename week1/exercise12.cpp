@@ -2,8 +2,8 @@
 #include <string>
 
 int main(int nargs, char* vargs[]){
-	float num1 = *vargs[1];
-	float num2 = *vargs[2];
+	float num1 = std::atof(vargs[1]);
+	float num2 = std::atof(vargs[2]);
 	std::string operation = vargs[3];
 	float result;
 	if(operation=="+"){
